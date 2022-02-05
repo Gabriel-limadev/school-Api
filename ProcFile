@@ -1,2 +1,2 @@
-release: python3.8.10 manage.py migrate
+release: python3 manage.py migrate
 web: gunicorn setup.wsgi --proload --log-file -
