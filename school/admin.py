@@ -1,5 +1,5 @@
 from django.contrib import admin
-from scholl.models import Student, Course, Registration
+from school.models import Student, Course, Registration
 # Register your models here.
 
 class Students(admin.ModelAdmin):
