@@ -20,8 +20,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'escola',
+    # My apps
+    'scholl',
+    # APIs
     'rest_framework',
+    # Filters
+    'django_filters',
+    # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -94,9 +99,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'pt-br'
+LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Sao_Paulo'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -114,5 +119,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-django_heroku.settings(locals())
