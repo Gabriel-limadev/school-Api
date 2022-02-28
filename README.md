@@ -1,3 +1,15 @@
+## 📎 Technologies
+
+Project was developed with the following technologies:
+- [Django-Rest-Framework](https://www.django-rest-framework.org/)
+
+## 📎 Acquired knowledge
+- I used this project to improve my knowledge about routes, views and filters
+
+This is a project developed with the team **[Alura](https://www.alura.com.br/)**
+
+<hr>
+
 <p align="center">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#installing">Installing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -431,11 +443,3 @@ returns all students in a course.
     },
 ]
 ```
-
-
-## 📎 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-- [Django-Rest-Framework](https://www.django-rest-framework.org/)
-
-Este é um projeto desenvolvido com a equipe **[Alura](https://www.alura.com.br/)**
