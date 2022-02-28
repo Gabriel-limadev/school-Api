@@ -21,7 +21,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # My apps
-    'scholl',
+    'school',
     # APIs
     'rest_framework',
     # Filters

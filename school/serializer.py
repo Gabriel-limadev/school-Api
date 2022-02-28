@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from scholl.models import Student, Course, Registration
+from school.models import Student, Course, Registration
 from .validators import *
 
 
