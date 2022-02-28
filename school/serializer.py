@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from scholl.models import Student, Course, Registration
+from school.models import Student, Course, Registration
 from .validators import *
 
 
@@ -42,20 +42,9 @@ class CourseSerializer(serializers.ModelSerializer):
         return data
            
 class RegistrationSerializer(serializers.ModelSerializer):
-    student = serializers.ReadOnlyField(source='student.name')
-    # Ex: Instead of N, we will see Nocturnal
-    course = serializers.ReadOnlyField(source='course.description')
-
     class Meta:
         model = Registration
         fields = '__all__'
-
-    # Methods of SerializerMethodField()
-    def get_student(self, obj):
-        return obj.get_student_display()
-
-    def get_period(self, obj):
-        return obj.get_period_display()
   
 class ListRegistrationStudentSerializer(serializers.ModelSerializer):
     # Leaving the fields with a better view

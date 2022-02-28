@@ -36,8 +36,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('period', models.CharField(choices=[('M', 'Matutino'), ('V', 'Vespertino'), ('N', 'Noturno')], default='M', max_length=1)),
-                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='scholl.course')),
-                ('student', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='scholl.student')),
+                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='school.course')),
+                ('student', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='school.student')),
             ],
         ),
     ]
