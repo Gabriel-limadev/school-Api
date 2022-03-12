@@ -13,7 +13,7 @@ class StudentsViewSet(viewsets.ModelViewSet):
     # Filters
     filter_backends = [filters.OrderingFilter, filters.SearchFilter]
     ordering_fields = ['name', 'date_birth']
-    search_fields = ['name']
+    search_fields = ['name', 'cpf']
     # Authentication
     authentication_classes = [BasicAuthentication]
     permission_classes = [IsAuthenticated]
@@ -25,7 +25,7 @@ class CoursesViewSet(viewsets.ModelViewSet):
     # Filters
     filter_backends = [filters.OrderingFilter, filters.SearchFilter]
     ordering_fields = ['course_code', 'level']
-    search_fields = ['course_code']
+    search_fields = ['description']
     # Authentication
     authentication_classes = [BasicAuthentication]
     permission_classes = [IsAuthenticated]
